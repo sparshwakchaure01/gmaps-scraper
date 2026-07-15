@@ -1,0 +1,26 @@
+How to run it (beginner steps):
+
+Install Node.js — download from nodejs.org (get the "LTS" version), install it like any normal program.
+Unzip gmaps-scraper.zip somewhere, e.g. your Desktop.
+Open a terminal (Command Prompt / Terminal app), navigate into the folder:
+
+   cd Desktop/gmaps-scraper
+
+Install everything:
+
+   npm install
+(this also downloads the mini Chrome browser it needs — takes a minute or two)
+
+5. Start it:
+   npm start
+
+Open your browser to http://localhost:3000
+Type a search like Cafe Sangamner, pick max results and Excel/CSV, hit Start Scraping, watch the log, then Download.
+
+What it actually does: opens Google Maps in the background, searches your keyword, scrolls the results list, then visits each business one by one
+(like a real user would) and pulls out name, phone, website, rating, reviews, address, coordinates — then checks if the website loads, 
+classifies it (Instagram/WhatsApp/broken/working), scores a Priority, and writes it all into a formatted Excel file.
+
+One honest caveat: Google's page layout changes now and then, so a field might come back blank for some businesses —
+it won't crash, it just skips that field and moves on. Also worth knowing: scraping Google Maps at volume isn't something 
+their Terms of Service technically allow, so this is best used for your own reasonable-volume research rather than running nonstop or reselling the data.Gmaps scraper
