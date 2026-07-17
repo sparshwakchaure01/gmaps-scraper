@@ -1,4 +1,6 @@
 # Google Maps Lead Scraper
+## Read the readme file in the zipped folder for setup
+
 
 A production-ready desktop application that automates Google Maps lead generation for agencies, freelancers, and businesses.
 
